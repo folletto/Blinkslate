@@ -1,0 +1,30 @@
+/* This is an hilight of something from the article */
+.hilight.box {
+  border-top: 1px dotted #cccccc;
+  border-bottom: 1px dotted #cccccc;
+  color: #666666;
+  
+  font-style: italic;
+  font-size: 1.2em;
+  
+  margin: 12px;
+  padding: 8px;
+}
+
+/* This is a content outside the main thread of the article */
+.side.box {
+  border: 1px dotted #cccccc;
+  color: #666666;
+  
+  
+  float: right;
+  
+  margin: 8px;
+  padding: 8px;
+  
+  width: 33%;
+}
+
+/* Enhance a bit */
+h2 { margin: 2em 0 1em; }
+h3 { margin: 1.5em 0 0.5em; }

@@ -1,0 +1,122 @@
+/*
+Theme Name: Blank Slate
+Theme URI: http://intenseminimalism.com
+Description: A clean and simple theme.
+Version: 10.02.03
+Author: Davide 'Folletto' Casali
+Author URI: http://intenseminimalism.com
+****************************************************************************************************
+* Copyright (C) 2009-2010 by Davide 'Folletto' Casali <folletto AT gmail DOT com>
+* Released under BSD license.
+*
+*/
+
+/*
+ * Background: #ffffff
+ * Text color: #000000
+ * Active color: #aa0000
+ * Active/bis color: #bb0000
+ * Filler color: ##cccccc
+ */
+
+/****************************************************************************************************
+ * General
+ */
+body {
+	font-family: Helvetica, Arial, Tahoma, sans-serif;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	background: #ffffff;
+}
+
+a {
+	color: #aa0000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #bb0000;
+}
+
+img { border: 0; }
+form { margin: 0; }
+
+/****************************************************************************************************
+ * Layout
+ */
+#header,
+#all,
+#footer {
+  width: 630px; /* 960.gs 24cols, skipping 4 columns on each side */
+  margin: 0 auto;
+}
+
+#sidebar {
+  width: 160px;
+  float: left;
+}
+
+#content {
+  width: 440px;
+  float: right;
+}
+
+/****************************************************************************************************
+ * Typographic
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, Times, serif;
+  font-weight: normal;
+  margin: 0 0 2em;
+}
+
+h1 { font-size: 24px; }
+h2 { font-size: 24px; }
+h3 { font-size: 24px; }
+h4 { font-size: 24px; }
+h5 { font-size: 24px; }
+h6 { font-size: 24px; }
+
+
+/****************************************************************************************************
+ * Sidebar
+ */
+#sidebar .quote {
+  font-family: Georgia, Times, serif;
+  font-size: 16px;
+  font-style: italic;
+}
+
+#sidebar ul {
+  border-top: 1px solid #cccccc;
+  
+  list-style: none;
+  margin: 30px 0 0;
+  padding: 0;
+}
+
+#sidebar ul li {
+  border-bottom: 1px solid #cccccc;
+}
+
+#sidebar ul li a {
+  display: block;
+  padding: 7px 2px;
+}
+
+
+/****************************************************************************************************
+ * Footer
+ */
+#footer {
+  clear: both;
+}
+
+/****************************************************************************************************
+ * Accessibility Support (Screen Readers & Keyboard Navigation)
+ * http://www.webaim.org/techniques/css/invisiblecontent/
+ */
+#skip a {position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;}
+#skip a:focus {position:absolute;left:0;top:0;width:auto;height:auto;}
+#skip a:focus {/*Skinning*/color:#ffffff;background:#333333;padding:16px 24px;font-size: 22px;z-index:100;}
