@@ -2,7 +2,7 @@
 Theme Name: Blank Slate
 Theme URI: http://intenseminimalism.com
 Description: A clean and simple theme.
-Version: 10.02.03
+Version: 1.0+20100727
 Author: Davide 'Folletto' Casali
 Author URI: http://intenseminimalism.com
 ****************************************************************************************************
@@ -11,13 +11,31 @@ Author URI: http://intenseminimalism.com
 *
 */
 
-/*
- * Background: #ffffff
- * Text color: #000000
- * Active color: #aa0000
- * Active/bis color: #bb0000
- * Filler color: ##cccccc
+
+/****************************************************************************************************
+ * Setup
+ * Change the following line to obtain a simple customization.
+ * Note that the background image alone will be able to make an amazing looking theme.
  */
+
+/* Background */
+/*body.blankslate { background: #ffffff url(gfx/background.jpg) repeat-x top center !important; } /**/
+
+/* Header (if using background as header keep this line) */
+/*body.blankslate #header h1 { display: none; } /**/
+
+/* Base color */ 
+/*body.blankslate a { color: #3f85bd; } /**/
+
+/* Hilight color */
+/*body.blankslate a:hover { color: #3f85bd; } /**/
+
+/* Font: base */
+/*body.blankslate p { font-family: Helvetica, Arial, sans-serif; } /**/
+
+/* Font: title */
+/*body.blankslate h1, body.blankslate h2, body.blankslate h3 { font-family: Impact, Helvetica, Arial, sans-serif; } /**/
+
 
 /****************************************************************************************************
  * General
@@ -52,6 +70,10 @@ form { margin: 0; }
   margin: 0 auto;
 }
 
+#header {
+  height: 200px;
+}
+
 #sidebar {
   width: 160px;
   float: left;
@@ -71,13 +93,30 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 2em;
 }
 
-h1 { font-size: 24px; }
-h2 { font-size: 24px; }
-h3 { font-size: 24px; }
-h4 { font-size: 24px; }
-h5 { font-size: 24px; }
-h6 { font-size: 24px; }
+h1 { font-size: 24px; text-shadow: 0px 2px 5px #cccccc; }
+h2 { font-size: 20px; text-shadow: 0px 2px 5px #cccccc; }
+h3 { font-size: 18px; text-shadow: 0px 2px 5px #cccccc; }
+h4 { font-size: 16px; text-shadow: 0px 2px 5px #cccccc; }
+h5 { font-size: 14px; text-shadow: 0px 2px 5px #cccccc; }
+h6 { font-size: 14px; text-shadow: 0px 2px 5px #cccccc; }
 
+/****************************************************************************************************
+ * Header
+ */
+#header {
+  overflow: hidden;
+}
+
+#header h1 {
+  font-size: 50px;
+  margin: 80px 0 0 190px;
+  text-shadow: 0px 2px 8px #cccccc;
+  letter-spacing: -1px;
+}
+
+#header h1 a {
+  color: #666666;
+}
 
 /****************************************************************************************************
  * Sidebar

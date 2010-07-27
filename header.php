@@ -18,14 +18,14 @@
   
 <?php @include get_template_directory()."/meta/header.php"; ?>
 </head>
-<body<?php if (is_single()) echo ' class="is-single"'; ?><?php if (is_page() && !is_page("archives")) echo ' class="is-page"'; ?>>
+<body class="blankslate<?php if (is_single()) echo ' is-single'; ?><?php if (is_page() && !is_page("archives")) echo ' is-page'; ?>">
   <!-- Accessibility > --><div id="skip"><a href="#highlight">Skip to content</a><a href="#nav" accesskey="n">Skip to navigation <small>(accesskey n)</small></a></div>
   
   <!-- \/ Header -->
   <div id="header">
     <div class="section">
       <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
-      <h2><?php bloginfo('description'); ?></h2>
+      <!--<h2><?php bloginfo('description'); ?></h2>-->
     </div>
   </div>
   <!-- /\ Header -->
