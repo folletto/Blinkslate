@@ -10,7 +10,7 @@ include "lib/editor-prolayout/editor-prolayout.php";
  *
  */
 class theme {
-  static $id = 'blankslatetheme';
+  static $id = 'blinkslatetheme';
   
   function count_posts($category, $year = null, $month = null) {
     /****************************************************************************************************

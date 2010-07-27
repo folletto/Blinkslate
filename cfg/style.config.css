@@ -6,20 +6,20 @@
  */
 
 /* Background */
-/*body.blankslate { background: #ffffff url(../gfx/background.jpg) repeat-x top center !important; } /**/
+/*body.blinkslate { background: #ffffff url(background.jpg) repeat-x top center !important; } /**/
 
 /* Header (if using background as header enable this line) */
-/*body.blankslate #header h1 { text-indent: -666em; } /**/
+/*body.blinkslate #header h1 { text-indent: -666em; } /**/
 
 /* Base color */ 
-/*body.blankslate a { color: #a8a642; } /**/
+/*body.blinkslate a { color: #a8a642; } /**/
 
 /* Hilight color */
-/*body.blankslate a:hover { color: #a8a642; } /**/
-/*body.blankslate #sidebar a:hover { background-color: #a8a642; } /**/
+/*body.blinkslate a:hover { color: #a8a642; } /**/
+/*body.blinkslate #sidebar a:hover { background-color: #a8a642; } /**/
 
 /* Font: base */
-/*body.blankslate p { font-family: Helvetica, Arial, sans-serif; } /**/
+/*body.blinkslate p { font-family: Helvetica, Arial, sans-serif; } /**/
 
 /* Font: title */
-/*body.blankslate h1, body.blankslate h2, body.blankslate h3 { font-family: Helvetica, Arial, sans-serif; } /**/
+/*body.blinkslate h1, body.blinkslate h2, body.blinkslate h3 { font-family: Helvetica, Arial, sans-serif; } /**/

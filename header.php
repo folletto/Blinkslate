@@ -18,7 +18,7 @@
   
 <?php @include get_template_directory()."/meta/header.php"; ?>
 </head>
-<body class="blankslate<?php if (is_single()) echo ' is-single'; ?><?php if (is_page() && !is_page("archives")) echo ' is-page'; ?>">
+<body class="blinkslate<?php if (is_single()) echo ' is-single'; ?><?php if (is_page() && !is_page("archives")) echo ' is-page'; ?>">
   <!-- Accessibility > --><div id="skip"><a href="#highlight">Skip to content</a><a href="#nav" accesskey="n">Skip to navigation <small>(accesskey n)</small></a></div>
   
   <!-- \/ Header -->
