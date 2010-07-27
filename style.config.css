@@ -1,0 +1,24 @@
+/****************************************************************************************************
+ * Setup
+ * Change the following line to obtain a simple customization.
+ *
+ * NOTE: the background image alone will be able to make an amazing looking theme.
+ */
+
+/* Background */
+/*body.blankslate { background: #ffffff url(gfx/background.jpg) repeat-x top center !important; } /**/
+
+/* Header (if using background as header enable this line) */
+/*body.blankslate #header h1 { display: none; } /**/
+
+/* Base color */ 
+/*body.blankslate a { color: #3f85bd; } /**/
+
+/* Hilight color */
+/*body.blankslate a:hover { color: #3f85bd; } /**/
+
+/* Font: base */
+/*body.blankslate p { font-family: Helvetica, Arial, sans-serif; } /**/
+
+/* Font: title */
+/*body.blankslate h1, body.blankslate h2, body.blankslate h3 { font-family: Helvetica, Arial, sans-serif; } /**/
