@@ -1,7 +1,7 @@
 /*
-Theme Name: Blank Slate
+Theme Name: Blinkslate
 Theme URI: http://intenseminimalism.com
-Description: A clean and simple theme.
+Description: A clean theme with incredible simple customization
 Version: 1.0+20100727
 Author: Davide 'Folletto' Casali
 Author URI: http://intenseminimalism.com
@@ -14,7 +14,7 @@ Author URI: http://intenseminimalism.com
 /****************************************************************************************************
  * Load Custom Configuration CSS
  */
-@import "style.config.css";
+@import "cfg/style.config.css";
 
 /****************************************************************************************************
  * General
@@ -48,6 +48,8 @@ form { margin: 0; }
   width: 630px; /* 960.gs 24cols, skipping 4 columns on each side */
   margin: 0 auto;
 }
+* html body { text-align: center; } /* [IEfix:5.5] centering 1/2 */
+* html #header, * html #all, * html #footer { text-align: left; } /* [IEfix:5.5] centering 2/2 */
 
 #header {
   height: 200px;
@@ -102,23 +104,34 @@ h6 { font-size: 14px; text-shadow: 0px 2px 5px #cccccc; }
 }
 
 /****************************************************************************************************
- * Body
+ * Article
  */
 #content {
-  
+  line-height: 1.4em;
 }
 
 #content .article {
   margin: 0 0 80px;
+  padding: 0 0 50px;
 }
 
-#content h2 {
+#content .article h2 {
   margin: 0 0 20px;
+}
+
+#content .article .meta {
+  color: #666666;
+  font-size: 11px;
 }
 
 /****************************************************************************************************
  * Sidebar
  */
+#sidebar {
+  margin: 19px 0 0;
+  padding: 0;
+}
+
 #sidebar .quote {
   font-family: Georgia, Times, serif;
   font-size: 16px;
@@ -141,6 +154,11 @@ h6 { font-size: 14px; text-shadow: 0px 2px 5px #cccccc; }
 #sidebar ul li a {
   display: block;
   padding: 7px 2px;
+}
+
+#sidebar ul li a:hover {
+  color: #ffffff;
+  background-color: #aa0000;
 }
 
 

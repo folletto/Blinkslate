@@ -6,16 +6,17 @@
  */
 
 /* Background */
-/*body.blankslate { background: #ffffff url(gfx/background.jpg) repeat-x top center !important; } /**/
+/*body.blankslate { background: #ffffff url(../gfx/background.jpg) repeat-x top center !important; } /**/
 
 /* Header (if using background as header enable this line) */
-/*body.blankslate #header h1 { display: none; } /**/
+/*body.blankslate #header h1 { text-indent: -666em; } /**/
 
 /* Base color */ 
-/*body.blankslate a { color: #3f85bd; } /**/
+/*body.blankslate a { color: #a8a642; } /**/
 
 /* Hilight color */
-/*body.blankslate a:hover { color: #3f85bd; } /**/
+/*body.blankslate a:hover { color: #a8a642; } /**/
+/*body.blankslate #sidebar a:hover { background-color: #a8a642; } /**/
 
 /* Font: base */
 /*body.blankslate p { font-family: Helvetica, Arial, sans-serif; } /**/

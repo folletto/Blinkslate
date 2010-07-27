@@ -1,7 +1,7 @@
       <!-- \/ Default Post - Full -->
-      <article class="article">
+      <div class="article">
         <div class="meta"><time class="time"><?php the_time("Y-m-d"); ?></time> <a href="<?php the_permalink() ?>" title="Permalink">&infin;</a></div>
-        <h1><?php the_title(); ?></h1>
+        <h2><?php the_title(); ?></h2>
         <?php if ($post->post_excerpt) { ?>
         <p class="excerpt">
            <?php echo get_the_excerpt(); ?>
@@ -17,5 +17,5 @@
         <!--
         <?php trackback_rdf(); ?>
         -->
-      </article>
+      </div>
       <!-- /\ Default Post - Full -->
