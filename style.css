@@ -130,25 +130,38 @@ h6 { font-size: 14px; text-shadow: 0px 2px 5px #cccccc; }
 #sidebar {
   margin: 19px 0 0;
   padding: 0;
+  overflow: hidden;
 }
 
 #sidebar .quote {
+  color: #666666;
+  
   font-family: Georgia, Times, serif;
   font-size: 16px;
   font-style: italic;
-  color: #666666;
+  
+  margin: 0 0 30px;
+}
+
+#sidebar h3 {
+  font-size: 12px;
+  margin: 15px 0 4px;
+  padding: 2px 0;
+  text-transform: uppercase;
+  text-shadow: none;
 }
 
 #sidebar ul {
   border-top: 1px solid #cccccc;
   
   list-style: none;
-  margin: 30px 0 0;
+  margin: 0 0 30px;
   padding: 0;
 }
 
 #sidebar ul li {
   border-bottom: 1px solid #cccccc;
+  word-wrap: break-word;
 }
 
 #sidebar ul li a {
@@ -161,6 +174,14 @@ h6 { font-size: 14px; text-shadow: 0px 2px 5px #cccccc; }
   background-color: #aa0000;
 }
 
+#sidebar img {
+  margin: 1px 0;
+  padding: 0;
+}
+
+#sidebar ul li img {
+  margin: 3px 0 0;
+}
 
 /****************************************************************************************************
  * Footer

@@ -1,7 +1,7 @@
   <!-- \/ Sidebar -->
   <div id="sidebar">
     <div class="quote">
-      Lorem ipsum dolor sit amet minor cessat iscequitor elit
+      Lorem ipsum gaium sit amet minor cessat iscequitor elit
     </div>
     <ul>
       <li><a href="">About</a></li>
