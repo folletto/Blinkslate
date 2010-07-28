@@ -4,10 +4,7 @@
       Lorem ipsum gaium sit amet minor cessat iscequitor elit
     </div>
     <ul>
-      <li><a href="">About</a></li>
-      <li><a href="">Lorem</a></li>
-      <li><a href="">Ipsum gaium sit</a></li>
-      <li><a href="">Amet iscqitur</a></li>
+      <?php wp_list_pages('title_li='); ?>
     </ul>
   </div>
   <!-- /\ Sidebar -->
