@@ -197,6 +197,18 @@ h6 { font-size: 14px; text-shadow: 0px 2px 5px #cccccc; }
   margin: 3px 0 0;
 }
 
+/****** Wordpress Widget specific rules */
+#sidebar .widget h3 a { color: #000000; }
+
+#sidebar .widget_search label { display: none; }
+#sidebar .widget_search input#s { width: 96%; }
+#sidebar .widget_search input#searchsubmit { width: 100%; display: none; }
+#sidebar .widget_search { margin: 0 0 20px; }
+
+#sidebar .widget_recent_comments li { font-size: 12px; padding: 2px; }
+
+#sidebar .widget_rss a.rsswidget img { width: 8px; height: 8px; }
+
 /****************************************************************************************************
  * Forms
  */

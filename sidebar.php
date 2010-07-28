@@ -1,10 +1,12 @@
   <!-- \/ Sidebar -->
   <div id="sidebar">
+    <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('global')): ?>
     <div class="quote">
-      Lorem ipsum gaium sit amet minor cessat iscequitor elit
+      <?php bloginfo('description'); ?>
     </div>
     <ul>
       <?php wp_list_pages('title_li='); ?>
     </ul>
+    <?php endif; ?>
   </div>
   <!-- /\ Sidebar -->

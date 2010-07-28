@@ -2,6 +2,19 @@
 require "lib/wordpress.portal.php";
 include "lib/editor-prolayout/editor-prolayout.php";
 
+/****** Sidebar */
+if (function_exists('register_sidebar')) {
+  register_sidebar(array(
+    'name'          => 'Global',
+    'id'            => 'global',
+    'description'   => 'Sidebar present on all the pages.',
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h3 class="widgettitle">',
+    'after_title'   => '</h3>'
+  ));
+}
+
 /******************************************************************************************
  * Theme Functions
  * by Davide 'Folletto' Casali <folletto AT gmail DOT com>
