@@ -6,27 +6,19 @@
 			  @include wpp::get_category_matching_partial('posts', 'php');
   		endwhile; ?>
   		
-  		<aside id="related">
+  		<div id="related">
   		  <div class="tray">
-  		    <span class="black">Related <a href="<?php bloginfo('url'); ?>/category/type/article/">articles</a></span>
-  		    <span class="categories">
-  		      <a href="<?php bloginfo('url'); ?>/category/content/life/"<?php echo (in_category('life') ? ' class="lit"' : '') ?>>life</a> &middot;
-  		      <a href="<?php bloginfo('url'); ?>/category/content/design/"<?php echo (in_category('design') ? ' class="lit"' : '') ?>>design</a> &middot;
-  		      <a href="<?php bloginfo('url'); ?>/category/content/psy/"<?php echo (in_category('psy') ? ' class="lit"' : '') ?>>psychology</a> &middot;
-  		      <a href="<?php bloginfo('url'); ?>/category/content/tech/"<?php echo (in_category('tech') ? ' class="lit"' : '') ?>>technology</a> &middot;
-  		      <a href="<?php bloginfo('url'); ?>/category/content/simplicity/"<?php echo (in_category('simplicity') ? ' class="lit"' : '') ?>>simplicity</a> &middot;
-  		      <a href="<?php bloginfo('url'); ?>/category/content/complexity/"<?php echo (in_category('complexity') ? ' class="lit"' : '') ?>>complexity</a>
-  		    </span>
+  		    <span class="black">Related posts</span>
   		  </div>
     		<?php echo wpp::related_posts(
     		  3,
     		  'article', // category filter
-    		  '<h3><a href="%post_permalink%" class="ico-article">%post_title%</a></h3>',
+    		  '<h4><a href="%post_permalink%">%post_title%</a></h4>',
     		  null, // dateformat
     		  0, // post_id
-    		  '<h3>Nothing yet.</h3>'
+    		  '<span class="smallstatus">Nothing yet.</span>'
     		); ?>
-  	  </aside>
+  	  </div>
   	  
   		<?php comments_template(); ?>
   		

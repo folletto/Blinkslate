@@ -28,18 +28,18 @@ endif;
  * Comment form
  */
 if ($post->comment_status == "open") : ?>
-    <section id="comment-form">
+    <div id="comment-form">
       <!-- \/ Comment Form -->	    
 	    <?php /********************************************************************** REG? */
 		  if (get_option('comment_registration') && !$user_ID): ?>
 	      <p class="notice">Sorry, but you must be <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=<?php the_permalink(); ?>">logged in</a> to add a comment.</p>
 	    <?php /********************************************************************** FORM */
 		  else : ?>
-		  	<h2>Do you have something to say? Please add it here:</h2>
+		  	<h2>Do you have something to say?<br/>Please add it here:</h2>
 	      <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post">
 		      <fieldset>
 			      <p>
-				      <textarea name="comment" id="comment" cols="60" rows="16" tabindex="1"></textarea>
+				      <textarea name="comment" id="comment" cols="50" rows="16" tabindex="1"></textarea>
 				    </p>
 			      <?php if ($user_ID): ?>
 			      <p class="signature">
@@ -69,5 +69,5 @@ if ($post->comment_status == "open") : ?>
 	      <!--<p class="allowedtags">Some HTML allowed: <?php echo allowed_tags(); ?></p>-->
 	    <?php endif; /**************************************************************** END */ ?>
 	    <!-- /\ Comment Form -->
-    </section>
+    </div>
 <?php endif; ?>
