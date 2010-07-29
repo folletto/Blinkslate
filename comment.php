@@ -28,8 +28,8 @@ if (!function_exists("__custom_gravatar")) {
  */
 if ($type == 'comment') { // Standard human comment
 ?>
-    <article class="comment<?php echo $moreclasses; ?>" id="comment-<?php comment_ID(); ?>">
-      <div class="meta"><time class="time"><a href="#comment-<?php comment_ID(); ?>"><?php comment_date(); ?> <?php comment_time(); ?></a></time></div>
+    <div class="comment<?php echo $moreclasses; ?>" id="comment-<?php comment_ID(); ?>">
+      <div class="meta"><time class="time"><a href="#comment-<?php comment_ID(); ?>"><?php comment_date("Y-m-d"); ?> <?php comment_time(); ?></a></time></div>
       <h2><?php comment_author_link(); ?>:</h2>
       <?php if ($comment->comment_approved == '0'): ?>
       <p class="notice">Your comment is awaiting moderation.</p>
@@ -38,15 +38,15 @@ if ($type == 'comment') { // Standard human comment
         <?php echo nl2br(get_comment_text()); ?>
       </p>
       <?php edit_comment_link('&epsilon;','<span class="editlink">','</span>'); ?>
-    </article>
+    </div>
 <?php } else { // Others: this will have in $moreclasses 'pingback' or else ?>
-    <article class="comment<?php echo $moreclasses; ?>" id="comment-<?php comment_ID(); ?>">
+    <div class="comment<?php echo $moreclasses; ?>" id="comment-<?php comment_ID(); ?>">
       <span class="pushout">&larr;</span>
-      <div class="meta"><time class="time"><a href="#comment-<?php comment_ID(); ?>"><?php comment_date(); ?> <?php comment_time(); ?></a></time></div>
+      <div class="meta"><time class="time"><a href="#comment-<?php comment_ID(); ?>"><?php comment_date("Y-m-d"); ?> <?php comment_time(); ?></a></time></div>
       <h2><?php comment_author_link(); ?></h2>
       <p class="content">
         <?php echo nl2br(get_comment_text()); ?>
       </p>
       <?php edit_comment_link('&epsilon;','<span class="editlink">','</span>'); ?>
-    </article>
+    </div>
 <?php } ?>
