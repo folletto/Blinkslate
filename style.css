@@ -135,10 +135,31 @@ h6 { font-size: 14px; text-shadow: 0px 2px 5px #cccccc; }
   font-size: 11px;
 }
 
+/****************************************************************************************************
+ * Related
+ */
 #content #related {
   background: #eeeeee;
   margin: -75px 0 60px;
   padding: 10px 12px;
+}
+
+#content #related .tray {
+  font-weight: bold;
+}
+
+#content #related ul {
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+
+#content #related ul li {
+  margin: 10px 0;
+}
+
+#content #related h4 {
+  font-weight: normal;
+  margin: 0;
 }
 
 /****************************************************************************************************
