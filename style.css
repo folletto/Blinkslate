@@ -231,7 +231,7 @@ input, textarea {
 label {
   display: block;
   float: left;
-  width: 100px;
+  width: 80px;
 }
 
 button, .button {
@@ -260,9 +260,34 @@ fieldset {
   
 }
 
-#comment-form {
-  
+#comment-form h2 {
+  margin: 0;
+  padding: 10px 0 10px;
 }
+
+#comment-form small {
+  color: #cccccc;
+}
+
+#comment-form textarea {
+  width: 100%;
+}
+
+
+#comment-form label {
+  width: 60px;
+}
+
+#comment-form input {
+  width: 170px;
+}
+
+#comment-form .button {
+  width: 235px;
+}
+* html #comment-form .button { width: 240px; }
+
+
 
 /****************************************************************************************************
  * Footer
