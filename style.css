@@ -89,18 +89,24 @@ h6 { font-size: 14px; text-shadow: 0px 2px 5px #cccccc; }
 }
 
 #header h1 {
+  position: relative;
   font-size: 50px;
   font-weight: normal;
 
   letter-spacing: -1px;
   line-height: 48px;
   
-  margin: 80px 0 0 190px;
+  margin: 0;
   text-shadow: 0px 2px 8px #cccccc;
 }
 
 #header h1 a {
   color: #666666;
+  
+  width: 460px;
+  position: absolute;
+  top: 80px;
+  left: 190px;
 }
 
 /****************************************************************************************************
