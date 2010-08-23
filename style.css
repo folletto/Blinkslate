@@ -330,6 +330,10 @@ fieldset {
   padding: 4px 6px;
 }
 
+#comments .author {
+  
+}
+
 #comment-form h2 {
   margin: 0;
   padding: 10px 0 10px;
@@ -356,6 +360,43 @@ fieldset {
   width: 235px;
 }
 * html #comment-form .button { width: 240px; }
+
+/********** Pingback */
+.comment.pingback {
+  
+}
+
+.comment.pingback h2,
+.comment.pingback p {
+  padding: 0 0 0 20px;
+}
+
+.comment.pingback .pushout {
+  line-height: 23px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* html .comment.pingback .pushout { top: 0px; } /* [IEfix:6.0] better alignment */
+/*+html .comment.pingback .pushout { top: 0px; } /* [IEfix:7.0] better alignment */
+
+.comment.pingback .meta {
+  padding: 3px 0 0 20px;
+}
+
+.comment.pingback .meta .time {
+  font-size: 10px;
+}
+
+.comment.pingback h2 {
+  font-size: 14px;
+}
+
+.comment.pingback p {
+  color: #888888;
+  font-size: 10px;
+  line-height: 16px;
+}
 
 /****************************************************************************************************
  * Footer

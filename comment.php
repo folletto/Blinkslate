@@ -40,7 +40,7 @@ if ($comment->comment_type != 'pingback') { // Standard human comment
       <?php edit_comment_link('&epsilon;','<span class="editlink">','</span>'); ?>
     </div>
 <?php } else { // Others: this will have in $moreclasses 'pingback' or else ?>
-    <div class="comment<?php echo $moreclasses; ?>" id="comment-<?php comment_ID(); ?>">
+    <div class="comment pingback<?php echo $moreclasses; ?>" id="comment-<?php comment_ID(); ?>">
       <span class="pushout">&larr;</span>
       <div class="meta"><time class="time"><a href="#comment-<?php comment_ID(); ?>"><?php comment_date("Y-m-d"); ?> <?php comment_time(); ?></a></time></div>
       <h2><?php comment_author_link(); ?></h2>
