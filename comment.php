@@ -26,7 +26,7 @@ if (!function_exists("__custom_gravatar")) {
 /****************************************************************************************************
  * Comment
  */
-if ($type == 'comment') { // Standard human comment
+if ($comment->comment_type != 'pingback') { // Standard human comment
 ?>
     <div class="comment<?php echo $moreclasses; ?>" id="comment-<?php comment_ID(); ?>">
       <div class="meta"><time class="time"><a href="#comment-<?php comment_ID(); ?>"><?php comment_date("Y-m-d"); ?> <?php comment_time(); ?></a></time></div>
