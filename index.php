@@ -12,7 +12,7 @@
     
     <div class="paginator">
 			<span class="next"><?php previous_posts_link('<span>&larr;</span> Newer Articles') ?></span>
-			<span class="prev"><?php next_posts_link('<span>&rarr;</span> Older Articles') ?></span>
+			<span class="prev"><?php next_posts_link('Older Articles <span>&rarr;</span>') ?></span>
 		</div>
     
 	  <?php } else { ?>

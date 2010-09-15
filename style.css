@@ -34,6 +34,7 @@ a {
 
 a:hover {
 	color: #bb0000;
+	text-decoration: underline;
 }
 
 img { border: 0; }
@@ -344,7 +345,7 @@ fieldset {
 }
 
 #comment-form textarea {
-  width: 100%;
+  width: 99%;
 }
 
 
@@ -410,12 +411,43 @@ fieldset {
 }
 
 /****************************************************************************************************
+ * Nuts
+ */
+.paginator .next,
+.paginator .prev {
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.paginator .next a,
+.paginator .prev a {
+  display: block;
+  padding: 8px 8px;
+}
+
+.paginator .next a:hover,
+.paginator .prev a:hover {
+  background: #f0f0f0;
+}
+
+.paginator .next {
+  float: left;
+  margin-left: -8px;
+}
+
+.paginator .prev {
+  float: right;
+  margin-right: -8px;
+}
+
+
+/****************************************************************************************************
  * Footer
  */
 #footer {
+  border-bottom: 4px solid #000000;
   clear: both;
   height: 40px;
-  margin: 20px 0 0;
 }
 
 /****************************************************************************************************
