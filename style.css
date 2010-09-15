@@ -362,16 +362,16 @@ fieldset {
 * html #comment-form .button { width: 240px; }
 
 /********** Pingback */
-.comment.pingback {
+#comments .comment.pingback {
   
 }
 
-.comment.pingback h2,
-.comment.pingback p {
+#comments .comment.pingback h2,
+#comments .comment.pingback p {
   padding: 0 0 0 20px;
 }
 
-.comment.pingback .pushout {
+#comments .comment.pingback .pushout {
   line-height: 23px;
   position: absolute;
   top: 0;
@@ -380,22 +380,33 @@ fieldset {
 /* html .comment.pingback .pushout { top: 0px; } /* [IEfix:6.0] better alignment */
 /*+html .comment.pingback .pushout { top: 0px; } /* [IEfix:7.0] better alignment */
 
-.comment.pingback .meta {
+#comments .comment.pingback .meta {
   padding: 3px 0 0 20px;
 }
 
-.comment.pingback .meta .time {
+#comments .comment.pingback .meta .time {
   font-size: 10px;
 }
 
-.comment.pingback h2 {
+#comments .comment.pingback h2 {
   font-size: 13px;
 }
 
-.comment.pingback p {
+#comments .comment.pingback p {
   color: #888888;
   font-size: 10px;
   line-height: 16px;
+}
+
+/********** Author */
+#comments .comment.author h2:first-letter,
+#comments .comment.author h2:first-letter a {
+  color: #444444;
+}
+
+#comments .comment.author h2,
+#comments .comment.author h2 a {
+  color: #666666;
 }
 
 /****************************************************************************************************
