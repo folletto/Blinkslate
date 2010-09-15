@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
-  <title><?php bloginfo('name'); wp_title('&bull;'); ?></title>
+  <title><?php wp_title('&bull;', true, 'right'); bloginfo('name');?></title>
   <meta name="description" content="<?php bloginfo('description'); ?>" />
   <meta name="theme author" content="Davide Casali - intenseminimalism.com" />
   
