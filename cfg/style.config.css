@@ -28,3 +28,6 @@
 /* Post: call to action */
 /*body.blinkslate .post-call-to-action-excerpt { display: none; } /**/
 /*body.blinkslate .post-call-to-action-full { display: none; } /**/
+
+/* Swap columns */
+/*#sidebar { float: right !important; } #content { float: left !important; } /**/
