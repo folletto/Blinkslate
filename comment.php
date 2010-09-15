@@ -44,9 +44,9 @@ if ($comment->comment_type != 'pingback') { // Standard human comment
       <span class="pushout">&larr;</span>
       <div class="meta"><time class="time"><a href="#comment-<?php comment_ID(); ?>"><?php comment_date("Y-m-d"); ?> <?php comment_time(); ?></a></time></div>
       <h2><?php comment_author_link(); ?></h2>
-      <p class="content">
+      <!--<p class="content">
         <?php echo nl2br(get_comment_text()); ?>
-      </p>
+      </p>-->
       <?php edit_comment_link('&epsilon;','<span class="editlink">','</span>'); ?>
     </div>
 <?php } ?>
