@@ -1,8 +1,83 @@
 /****************************************************************************************************
- * Typophile White, Print Stylesheet
+ * Blinkslate, Print Stylesheet
  *
  * Copyright (C) 2009-2010 by Davide 'Folletto' Casali <folletto AT gmail DOT com>
  * Released under BSD license.
  *
  */
+
+
+/****************************************************************************************************
+ * Load Custom Configuration CSS
+ */
+@import "cfg/style.config.css";
+@import "style.css";
+
+/****** Reset screen-scpecific Custom Configuration CSS rules */
+body.blinkslate { background: #ffffff !important; }
+body.blinkslate #header h1 a { text-indent: 0; }
+
+
+/****************************************************************************************************
+ * Adapt main CSS to print
+ */
+#all {
+  margin: auto;
+  width: auto;
+}
+
+#header {
+  margin: 50px 50px 20px;
+}
+
+#content {
+  width: auto;
+  margin: 0 50px 20px;
+}
+
+#header {
+  width: auto;
+  overflow: auto;
+  height: auto;
+}
+
+#header h1 {
+  font-size: 28px;
+  line-height: inherit;
+}
+
+#header h1 a {
+  width: auto;
+  position: static;
+  left: auto;
+  top: auto;
+}
+
+#content .article h2 {
+  font-size: 32px;
+  margin: 6px 0 40px;
+}
+
+/****************************************************************************************************
+ * Print specific
+ */
+#comments {
+  page-break-before: always; /* hopes... */
+}
+
+/****************************************************************************************************
+ * Kill screen bits
+ */
+#sidebar,
+#comment-form,
+#skip,
+#related,
+.paginator,
+.editlink {
+  display: none;
+}
+
+#footer {
+  border: 0;
+}
 
