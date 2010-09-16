@@ -13,6 +13,6 @@
   </div>
   <!-- /\ Footer -->
 
-<?php @include get_template_directory()."/meta/footer.php"; ?>
+<?php @include get_template_directory()."/cfg/meta-footer.php"; ?>
 </body>
 </html>
