@@ -230,6 +230,7 @@ h6 { font-size: 14px; text-shadow: 0px 2px 5px #cccccc; }
 #sidebar ul li a {
   display: block;
   padding: 7px 2px;
+  text-decoration: none;
 }
 
 #sidebar ul li a:hover {
