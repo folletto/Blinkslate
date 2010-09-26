@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 	
+	  <a name="highlight">
   	<?php if (have_posts()) { ?>
 	  
 	  <div class="list">
