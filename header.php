@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php bloginfo('language') ?>">
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
   <title><?php wp_title('&bull;', true, 'right'); bloginfo('name');?></title>
