@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 	  
+	  <a name="highlight"></a>
 	  <div class="hgroup searchresults">
 	    <small>Anything about</small>
 	    <h1><em>&ldquo;</em><?php echo $_REQUEST['s']; ?><em>&rdquo;</em></h1>
